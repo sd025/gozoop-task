@@ -1,4 +1,4 @@
-const mongoose = require("mongoose")
+import mongoose from "mongoose";
 
 const SubmissionSchema = new mongoose.Schema({
   name: {
@@ -15,5 +15,6 @@ const SubmissionSchema = new mongoose.Schema({
   },
 })
 
-module.exports = mongoose.model("Submission", SubmissionSchema)
+const submit = mongoose.model("Submission", SubmissionSchema)
+export default submit;
 

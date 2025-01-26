@@ -1,14 +1,18 @@
 import path from "path";
 import express from "express";
 import dotenv from "dotenv";
+import cors from "cors";
 import connectDB from "./db/connectDB.js";
 import submissionRoutes from "./routes/submissions.js"
+import http from "http";
 
 dotenv.config();
 
 connectDB();
 
 const app = express();
+const server = http.createServer(app);
+
 const PORT = process.env.PORT || 4000;
 const __dirname = path.resolve();
 
