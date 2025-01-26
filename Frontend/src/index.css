@@ -1,1 +1,25 @@
-@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-red: #ff0000;
+  --brand-dark-red: #b22222;
+}
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.font-cursive {
+  font-family: "Brush Script MT", cursive;
+  font-weight: 400;
+}
+
+.font-display {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: -0.02em;
+}
+
