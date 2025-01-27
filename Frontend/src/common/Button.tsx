@@ -12,7 +12,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({ children, onClick, classNam
     <button
       type={type}
       onClick={onClick}
-      className={`bg-red-600 text-white px-6 py-2 rounded-full text-lg font-bold hover:bg-red-700 transition duration-300 ${className}`}
+      className={`bg-brand-red text-white px-6 py-2 font-bold hover:bg-red-700 transition duration-300 transform hover:scale-105 ${className}`}
     >
       {children}
     </button>
