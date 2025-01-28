@@ -1,6 +1,6 @@
 export default function Contact() {
     return (
-      <section className="bg-brand-darkRed border-l-8 border-r-8 border-b-8 border-white overflow-hidden">
+      <section className="bg-brand-darkRed border-r-[16px] border-l-[16px] border-b-[32px] border-white overflow-hidden">
         <div className="container mx-auto px-4">
           <h2 className="text-left text-5xl text-white mb-20">
             <div className="font-display mb-4">REGISTER NOW TO BE A PART OF</div>
