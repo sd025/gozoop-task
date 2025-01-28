@@ -9,12 +9,14 @@ const Banner: React.FC = () => {
   const carouselItems = [
     {
       image: photo,
-      title: "INDIA'S BIGGEST REAL ESTATE",
+      title1: "INDIA'S BIGGEST",
+      title2: "REAL ESTATE",
       subtitle: "Uprising",
     },
     {
       image: "https://images.unsplash.com/photo-1589779255235-85dc2a054145?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "LUXURIOUS PROPERTIES",
+      title1: "LUXURIOUS",
+      title2: "PROPERTIES",
       subtitle: "Discover",
     },
   ]
@@ -45,9 +47,9 @@ const Banner: React.FC = () => {
           <div className="relative z-20 h-full flex flex-col items-center justify-center">
             <div className="text-left">
               <h2 className="text-white md:text-7xl font-semibold font-display text-6xl tracking-tight mb-6">
-                INDIA'S BIGGEST
+              <span >{item.title1}</span>
               <br />
-                REAL ESTATE
+              <span >{item.title2}</span>
               <br />
               <span className="font-cursive text-center block">{item.subtitle}</span>
               </h2>
