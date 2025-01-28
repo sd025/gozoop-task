@@ -25,7 +25,7 @@ const locations = [
 
 export default function Neighborhood() {
   return (
-    <section className="py-24 bg-gray-100">
+    <section className="py-24 bg-[#E5E5E6]">
       <div className="container mx-auto px-4">
         <h2 className="text-center font-display text-5xl mb-20">
           INDIA'S ONLY <span className="font-cursive text-brand-red">Next-gen</span>
@@ -36,7 +36,7 @@ export default function Neighborhood() {
         <div className="flex flex-col lg:flex-row gap-16">
           <div className="lg:w-1/2">
             <div className="relative aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden">
-              <img src={photo} alt="Neighborhood Map" className="w-full h-full object-cover" />
+              <img src={photo} alt="Neighborhood Map" className="w-full h-full" />
             </div>
           </div>
 

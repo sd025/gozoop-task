@@ -48,9 +48,9 @@ export default function ConsumerStats() {
   ];
 
   return (
-    <section className="relative min-h-screen w-full overflow-hidden bg-gray-100 px-4 py-16 md:px-8 lg:px-12">
+    <section className="relative min-h-screen w-full overflow-hidden bg-[#E5E5E6] px-4 py-16 md:px-8 lg:px-12">
       <div className="mx-auto max-w-7xl">
-        <h2 className="mb-16 text-center text-3xl font-medium font-display tracking-tight md:text-4xl lg:text-5xl">
+        <h2 className="mb-16 text-center text-3xl font-light font-display tracking-tight md:text-4xl lg:text-5xl">
           FOR THE <span className="font-cursive text-brand-red">New-Age</span> 
           <div>
             GLOBAL CONSUMER

@@ -1,6 +1,7 @@
 import React from "react";
 import CustomButton from "../common/Button";
 import photo from "../assets/photo.avif";
+import { Link } from "react-router-dom";
 
 
 const Banner: React.FC = () => {
@@ -26,9 +27,11 @@ const Banner: React.FC = () => {
             <span className="font-cursive text-center block">Uprising</span>
           </h2>
           <div className="flex justify-center">
-            <CustomButton className="font-display bg-red-500 text-3xl hover:bg-red-700 text-white font-medium px-4 py-1 transition duration-300">
-              ENQUIRE NOW
-            </CustomButton>
+            <Link to='/form'>
+              <CustomButton className="font-display bg-red-500 text-3xl hover:bg-red-700 text-white font-medium px-4 py-1 transition duration-300">
+                ENQUIRE NOW
+              </CustomButton>
+            </Link>
           </div>
         </div>
       </div>

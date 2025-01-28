@@ -38,7 +38,7 @@ export default function Features() {
     <section className="py-24 bg-white">
       <div className="container mx-auto px-4">
         <h2 className="text-center mb-20">
-          <div className="font-display font-medium text-5xl tracking-tight mb-4">
+          <div className="font-display font-light text-5xl tracking-tight mb-4">
             INDIA'S ONLY <span className="font-cursive text-brand-red">New-age</span> DISTRICT
             <div>
               FOR THE NEW AGE CUSTOMER OF TODAY
