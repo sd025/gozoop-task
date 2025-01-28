@@ -29,9 +29,8 @@ export default function Contact() {
                 Off National highway 4, Behind RAF, Near Kharghar Sector 34 Metro Station,
                 Rohinjan, Maharashtra - 410208
               </p>
-              <p className="text-sm text-white/70">
+              <p className="mb-4 text-xs text-white/70">
                 Disclaimer: Buildings have registered real estate projects with Maharashtra Real Estate
-                <br />
                 Regulatory Authority as following: "Adhiraj Capital City Tower Oreka" with MahaRERA Registration No. LIC
                 HFL
                 <br />

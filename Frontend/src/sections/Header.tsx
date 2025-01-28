@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -7,14 +8,15 @@ const Header: React.FC = () => {
   return (
     <header className="absolute top-0 left-0 right-0 z-50 bg-white shadow-md">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <div className="flex items-center">
-          <img
-            src={"https://adhiraj.co.in/wp-content/uploads/2021/08/Asset-4.png"}
-            alt="Adhiraj Logo"
-            className="w-20 h-12"
-          />
-        </div>
-
+        <Link to='/'>
+          <div className="flex items-center">
+            <img
+              src={"https://adhiraj.co.in/wp-content/uploads/2021/08/Asset-4.png"}
+              alt="Adhiraj Logo"
+              className="w-20 h-12"
+            />
+          </div>
+        </Link>
         <nav className="hidden md:block">
           <ul className="flex space-x-8 text-sm font-light text-gray-400 uppercase">
             <li>

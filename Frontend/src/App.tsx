@@ -5,11 +5,13 @@ import { store } from "./store/store"
 import HomePage from "./components/Home"
 import FormPage from "./components/Form"
 import AdminPanel from "./components/Admin"
+import ScrollToTop from "./components/ScrollTop"
 
 const App: React.FC = () => {
   return (
     <Provider store={store}>
       <Router>
+        <ScrollToTop />
         <Routes>
           <Route path="/" Component={HomePage} />
           <Route path="/form" Component={FormPage} />

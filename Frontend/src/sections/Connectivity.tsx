@@ -31,31 +31,31 @@ export default function Connectivity() {
           </div>
           <div className="font-display">TO MUMBAI & MORE</div>
         </h2>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 bg-white">
-          {connectivityFeatures.map((feature, index) => (
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-4">
+          {connectivityFeatures.map((project, index) => (
             <div
               key={index}
-              className="relative overflow-visible transform hover:-translate-y-2 transition duration-300"
+              className="bg-white relative overflow-visible transform hover:-translate-y-2 transition duration-300"
             >
-              <div className="text-center my-6">
-                <h3 className="font-display text-md text-black">{feature.title}</h3>
+              <div className="text-center py-6 bg-brand-darkRed">
+                <h3 className="font-display text-md text-black">{project.title}</h3>
               </div>
               <div className="relative -translate-y-4 z-10">
                 <img
-                  src={feature.image || "placeholder"}
-                  alt={feature.title}
+                  src={project.image || "placeholder"}
+                  alt={project.title}
                   className="w-full h-56 object-cover"
                 />
               </div>
               <div className="p-6 text-center relative z-0">
                 <p className="text-gray-500 text-sm leading-relaxed">
-                  {feature.description}
+                  {project.description}
                 </p>
               </div>
             </div>
           ))}
         </div>
+          
       </div>
     </section>
   );
