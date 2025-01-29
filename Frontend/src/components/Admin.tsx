@@ -60,6 +60,7 @@ const AdminPanel: React.FC = () => {
                 <tr>
                   <th className="py-2 px-4 border-b text-left">Name</th>
                   <th className="py-2 px-4 border-b text-left">Email</th>
+                  <th className="py-2 px-4 border-b text-left">Phone</th>
                   <th className="py-2 px-4 border-b text-left">Submission Date</th>
                 </tr>
               </thead>
@@ -68,6 +69,7 @@ const AdminPanel: React.FC = () => {
                   <tr key={submission._id}>
                     <td className="py-2 px-4 border-b">{submission.name}</td>
                     <td className="py-2 px-4 border-b">{submission.email}</td>
+                    <td className="py-2 px-4 border-b">{submission?.phone}</td>
                     <td className="py-2 px-4 border-b">{new Date(submission.createdAt).toLocaleString()}</td>
                   </tr>
                 ))}

@@ -13,6 +13,7 @@ const Header: React.FC = () => {
             <img
               src={"https://adhiraj.co.in/wp-content/uploads/2021/08/Asset-4.png"}
               alt="Adhiraj Logo"
+              loading="lazy"
               className="w-20 h-12"
             />
           </div>

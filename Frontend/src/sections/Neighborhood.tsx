@@ -36,7 +36,7 @@ export default function Neighborhood() {
         <div className="flex flex-col lg:flex-row gap-16">
           <div className="lg:w-1/2">
             <div className="relative aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden">
-              <img src={photo} alt="Neighborhood Map" className="w-full h-full" />
+              <img src={photo} alt="Neighborhood Map" className="w-full h-full" loading="lazy"/>
             </div>
           </div>
 

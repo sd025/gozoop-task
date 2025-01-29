@@ -98,6 +98,7 @@ export default function ConsumerStats() {
                     <img 
                       src={item.imageSrc}
                       alt="" 
+                      loading="lazy"
                       className="h-full w-full object-cover" 
                     />
                     <div className={`absolute inset-0 ${item.overlay}`} />

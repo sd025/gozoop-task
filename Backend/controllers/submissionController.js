@@ -2,8 +2,8 @@ import Submission from "../models/Submissions.js"
 
 async function sendSubmission(req, res) {
   try {
-    const { name, email } = req.body
-    const submission = new Submission({ name, email })
+    const { name, email, phone } = req.body
+    const submission = new Submission({ name, email, phone })
     await submission.save()
     res.status(201).json({ message: "Submission successful" })
   } catch (error) {

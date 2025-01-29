@@ -44,6 +44,7 @@ export default function Connectivity() {
                 <img
                   src={project.image || "placeholder"}
                   alt={project.title}
+                  loading="lazy"
                   className="w-full h-56 object-cover"
                 />
               </div>

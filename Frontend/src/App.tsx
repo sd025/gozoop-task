@@ -6,19 +6,26 @@ import HomePage from "./components/Home"
 import FormPage from "./components/Form"
 import AdminPanel from "./components/Admin"
 import ScrollToTop from "./components/ScrollTop"
+import { Toaster } from "react-hot-toast";
 
 const App: React.FC = () => {
   return (
-    <Provider store={store}>
-      <Router>
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" Component={HomePage} />
-          <Route path="/form" Component={FormPage} />
-          <Route path="/admin" Component={AdminPanel} />
-        </Routes>
-      </Router>
-    </Provider>
+    <>
+    <div>
+      <Toaster
+        position="top-center"
+      ></Toaster>
+    </div><Provider store={store}>
+        <Router>
+          <ScrollToTop />
+          <Routes>
+            <Route path="/" Component={HomePage} />
+            <Route path="/form" Component={FormPage} />
+            <Route path="/admin" Component={AdminPanel} />
+          </Routes>
+        </Router>
+      </Provider>
+      </>
   )
 }
 

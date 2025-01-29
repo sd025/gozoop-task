@@ -7,6 +7,7 @@ import Header from "../sections/Header"
 import CustomInput from "../common/Input"
 import CustomButton from "../common/Button"
 import SectionTitle from "../common/Title"
+import toast from "react-hot-toast"
 
 const FormPage: React.FC = () => {
   const [name, setName] = useState("")
@@ -17,12 +18,12 @@ const FormPage: React.FC = () => {
     e.preventDefault()
     try {
       await dispatch(submitForm({ name, email })).unwrap()
-      alert("Form submitted successfully!")
+      toast.success("Form submitted successfully!");
       setName("")
       setEmail("")
     } catch (error) {
       console.error("Error submitting form:", error)
-      alert("An error occurred. Please try again.")
+      toast.error("An error occurred. Please try again.")
     }
   }
 

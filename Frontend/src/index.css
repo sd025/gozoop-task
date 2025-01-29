@@ -14,7 +14,7 @@ body {
 }
 
 .font-cursive {
-  font-family: "Brush Script MT", cursive;
+  font-family: "Brush Script MT", cursive, "Comic Sans MS", "Apple Chancery", sans-serif;
   font-weight: 400;
 }
 

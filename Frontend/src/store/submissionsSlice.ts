@@ -5,6 +5,7 @@ export interface Submission {
   _id: string
   name: string
   email: string
+  phone?: string
   createdAt: string
 }
 
@@ -27,7 +28,7 @@ export const fetchSubmissions = createAsyncThunk("submissions/fetchSubmissions",
 
 export const submitForm = createAsyncThunk(
   "submissions/submitForm",
-  async (formData: { name: string; email: string }) => {
+  async (formData: { name: string; email: string; phone?: string }) => {
     const response = await axios.post<{ message: string }>("/api/submit", formData)
     return response.data
   },
